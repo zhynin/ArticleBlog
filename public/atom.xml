@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Forecho&#39;s Blog</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Forecho&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Jun 2020 19:44:18 +0800</lastBuildDate>
+    
+        <atom:link href="http://localhost:1313/atom.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:1313/my-first-post.html</link>
+      <pubDate>Wed, 24 Jun 2020 19:44:18 +0800</pubDate>
+      
+      <guid>http://localhost:1313/my-first-post.html</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/post/readme.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/readme.html</guid>
+      
+        <description>&lt;h1 id=&#34;hugo-theme-even&#34;&gt;hugo-theme-even&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even/contributors&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/contributors/olOwOlo/hugo-theme-even.svg?colorB=green&#34; alt=&#34;GitHub contributors&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even/releases&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/release/olOwOlo/hugo-theme-even.svg?colorB=green&#34; alt=&#34;GitHub release&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even/compare&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/commits-since/olOwOlo/hugo-theme-even/latest.svg?colorB=green&#34; alt=&#34;GitHub commits (since latest release)&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even/blob/master/LICENSE.md&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/license/mashape/apistatus.svg&#34; alt=&#34;GitHub&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A super concise theme for Hugo&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;该主题移植自 &lt;a href=&#34;https://github.com/ahonn/hexo-theme-even&#34;&gt;hexo-theme-even&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.olowolo.com/example-site/&#34;&gt;在线预览 Demo&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/olOwOlo/hugo-theme-even/master/images/showcase.png&#34; alt=&#34;even-showcase&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;background-color:#f0f3f3;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;重要:&lt;/strong&gt; 在主题的 &lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even/tree/master/exampleSite&#34;&gt;&lt;code&gt;exampleSite&lt;/code&gt;&lt;/a&gt; 目录下有一个 &lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even/blob/master/exampleSite/config.toml&#34;&gt;&lt;code&gt;config.toml&lt;/code&gt;&lt;/a&gt; 文件，&lt;strong&gt;将这个 &lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even/blob/master/exampleSite/config.toml&#34;&gt;&lt;code&gt;config.toml&lt;/code&gt;&lt;/a&gt; 文件复制到你的站点目录下&lt;/strong&gt;，根据自己的需求更改即可。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;重要:&lt;/strong&gt; 本主题用到了 &lt;a href=&#34;https://gohugo.io/hugo-pipes/introduction/&#34;&gt;Hugo Pipes&lt;/a&gt; 功能。如需修改 &lt;code&gt;assets&lt;/code&gt; 目录下的文件，请安装 extended 版。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意:&lt;/strong&gt; 对于这个主题，你应该使用 &lt;strong&gt;post&lt;/strong&gt; 而不是 &lt;strong&gt;posts&lt;/strong&gt;，即 &lt;code&gt;hugo new post/some-content.md&lt;/code&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;language-support&#34;&gt;Language Support&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;翻译资源在 &lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even/tree/master/i18n&#34;&gt;&lt;code&gt;themes/even/i18n/&lt;/code&gt;&lt;/a&gt; 文件夹（内置在主题中），以及站点根目录下的 &lt;code&gt;i18n/&lt;/code&gt; 文件夹中。两个文件夹下的翻译资源将会被合并，且根目录下的优先级大于内置于主题中的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;只需要正确的设置 &lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even/blob/master/exampleSite/config.toml#L3&#34;&gt;&lt;code&gt;defaultContentLanguage&lt;/code&gt;&lt;/a&gt; 的值即可使用翻译资源。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;background-color:#f0f3f3;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;defaultContentLanguage = &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;  &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;# en / zh-cn / other...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;同样也支持其他语言。举例来说，为支持德语，在站点根目录下创建 &lt;code&gt;/i18n/de.yaml&lt;/code&gt; 文件。参考 &lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even/tree/master/i18n/en.yaml&#34;&gt;&lt;code&gt;en.yaml&lt;/code&gt;&lt;/a&gt; 文件查看如何编写翻译资源。&lt;/p&gt;
+&lt;p&gt;附：在多语言模式下，当前正被用于渲染网站的语言会被用于匹配翻译资源。&lt;/p&gt;
+&lt;h2 id=&#34;favicon&#34;&gt;Favicon&lt;/h2&gt;
+&lt;p&gt;为了定制 favicon，你需要在站点根目录的 &lt;code&gt;static&lt;/code&gt; 文件夹下放置下述&lt;strong&gt;所有&lt;/strong&gt;文件，这将覆盖 &lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even/tree/master/static&#34;&gt;&lt;code&gt;themes/even/static/&lt;/code&gt;&lt;/a&gt; 文件夹下的那些文件。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;android-chrome-192x192.png&lt;/li&gt;
+&lt;li&gt;android-chrome-512x512.png&lt;/li&gt;
+&lt;li&gt;apple-touch-icon.png&lt;/li&gt;
+&lt;li&gt;browserconfig.xml&lt;/li&gt;
+&lt;li&gt;favicon.ico&lt;/li&gt;
+&lt;li&gt;favicon-16x16.png&lt;/li&gt;
+&lt;li&gt;favicon-32x32.png&lt;/li&gt;
+&lt;li&gt;manifest.json&lt;/li&gt;
+&lt;li&gt;mstile-150x150.png&lt;/li&gt;
+&lt;li&gt;safari-pinned-tab.svg&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.google.com/search?q=favicon+generator&#34;&gt;favicon generator (Google)&lt;/a&gt; 能够帮助你生成这些文件。&lt;/p&gt;
+&lt;h2 id=&#34;front-matter&#34;&gt;Front Matter&lt;/h2&gt;
+&lt;p&gt;你可以通过 front-matter 针对每一篇文章单独进行设置。&lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even/tree/master/archetypes/default.md&#34;&gt;&lt;code&gt;themes/even/archetypes/default.md&lt;/code&gt;&lt;/a&gt; 文件陈列了所有可用的参数。将该文件复制到站点根目录的 &lt;code&gt;archetypes&lt;/code&gt; 文件夹下将会有所帮助。&lt;/p&gt;
+&lt;h2 id=&#34;shortcodes&#34;&gt;Shortcodes&lt;/h2&gt;
+&lt;p&gt;主题提供了 &lt;code&gt;center&lt;/code&gt;,&lt;code&gt; right&lt;/code&gt;, &lt;code&gt;left&lt;/code&gt;,&lt;code&gt; music&lt;/code&gt;, &lt;code&gt;admonition&lt;/code&gt; 这些 shortcodes，并支持为内置的 &lt;code&gt;figure&lt;/code&gt; 设置 &lt;code&gt;center&lt;/code&gt;,&lt;code&gt; right&lt;/code&gt;, &lt;code&gt;left&lt;/code&gt; 这三种 class 值。点击&lt;a href=&#34;https://blog.olowolo.com/example-site/post/shortcodes/&#34;&gt;这里&lt;/a&gt;查看详细内容。&lt;/p&gt;
+&lt;h2 id=&#34;theme-color&#34;&gt;Theme Color&lt;/h2&gt;
+&lt;p&gt;主题内置了五种颜色 ( Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet )，你可以通过改变 &lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even/blob/master/assets/sass/_variables.scss#L5-L8&#34;&gt;&lt;code&gt;/assets/sass/_variable.scss&lt;/code&gt;&lt;/a&gt; 文件中 &lt;code&gt;$theme-color-config&lt;/code&gt; 的值来改变主题的颜色。&lt;/p&gt;
+&lt;h2 id=&#34;update-theme&#34;&gt;Update Theme&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;background-color:#f0f3f3;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#366&#34;&gt;cd&lt;/span&gt; ./themes/even/
+git pull
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even/blob/master/LICENSE.md&#34;&gt;MIT&lt;/a&gt; License.&lt;/p&gt;
+&lt;h2 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/budparr/gohugo-theme-ananke&#34;&gt;ananke&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ahonn/hexo-theme-even&#34;&gt;hexo-theme-even&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/laozhu/hugo-nuo&#34;&gt;hugo-nuo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/post/test.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/test.html</guid>
+      
+        <description>&lt;h1 id=&#34;me&#34;&gt;me&lt;/h1&gt;
+&lt;p&gt;you ?????&lt;/p&gt;
+</description>
+      
+    </item>
+    
+  </channel>
+</rss>

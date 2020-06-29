@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on 之芫 博客</title>
+    <link>https://blog.msezi.com/tags/linux/</link>
+    <description>Recent content in Linux on 之芫 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 08 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.msezi.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debian&#43;Nginx&#43;MariaDB&#43;PHP&#43;WordPress详细完整云端建站教程</title>
+      <link>https://blog.msezi.com/post/1/</link>
+      <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.msezi.com/post/1/</guid>
+      <description>@[toc] 上大学前一直筹划自己建站当站长，然而在早就买好的云服务器，一直只挂了一个静态网站，也没多少激情去维护，自己开发的动态网站，emmm，我自己</description>
+    </item>
+    
+  </channel>
+</rss>

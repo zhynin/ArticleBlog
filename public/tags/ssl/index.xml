@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSL on 之芫 博客</title>
+    <link>https://blog.msezi.com/tags/ssl/</link>
+    <description>Recent content in SSL on 之芫 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 09 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.msezi.com/tags/ssl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>阿里云服务器&#43;Nginx部署 SSL</title>
+      <link>https://blog.msezi.com/post/2/</link>
+      <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.msezi.com/post/2/</guid>
+      <description>首先到SSL控制台下载SSL证书，记得下载对应版本的，下载Nginx版本。 然后上传到服务器。 修改两个文件名为SSL站点的名字 1、在Nginx</description>
+    </item>
+    
+  </channel>
+</rss>

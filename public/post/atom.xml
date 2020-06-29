@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Forecho&#39;s Blog</title>
+    <link>http://localhost:1313/post.html</link>
+    <description>Recent content in Posts on Forecho&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/post/atom.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/post/readme.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/readme.html</guid>
+      <description>hugo-theme-even A super concise theme for Hugo 该主题移植自 hexo-theme-even 在线预览 Demo Screenshots Installation 1 $ git clone https://github.com/olOwOlo/hugo-theme-even themes/even 重要: 在主题的 exampleSite 目录下有一个 config.toml 文件，将这个 config.toml 文件复制到你的站点目录下，根据自己的需求更</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/post/test.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/test.html</guid>
+      <description>me you ?????</description>
+    </item>
+    
+  </channel>
+</rss>

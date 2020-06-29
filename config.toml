@@ -1,0 +1,115 @@
+# This is a simple configuration.
+# If you want to see the full configuration, please check `full-config.toml` .
+# And see https://gohugo.io/getting-started/configuration/ .
+
+baseURL = "https://blog.msezi.com"
+title = "之芫 博客"
+enableRobotsTXT = true
+enableEmoji = true
+theme = "jane"
+
+hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
+paginate = 8              # Number of articles displayed on the homepage  # 首页每页显示的文章数
+rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输出数量
+disqusShortname = ""      # disqus_shortname
+googleAnalytics = ""      # UA-XXXXXXXX-X
+copyright = "" # "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."            # default: author.name ↓        # 默认为下面配置的author.name ↓
+
+# language support # en / zh-cn / other... translations present in i18n/
+# defaultContentLanguage = "en"           # Default language to use
+# [languages.en]
+#   languageCode = "en"
+
+# 使用中文
+defaultContentLanguage = "zh-cn"  # 默认使用的语言
+[Languages.zh-cn]
+  languageCode = "zh-cn"
+
+[author]                  # essential                     # 必需
+  name = "之芫"
+
+[sitemap]                 # essential                     # 必需
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[[menu.main]]             # config your menu              # 配置目录
+  name = "主页"
+  weight = 10
+  identifier = "home"
+  url = "/"
+[[menu.main]]
+  name = "归档"
+  weight = 20
+  identifier = "archives"
+  url = "/post/"
+[[menu.main]]
+  name = "标签"
+  weight = 30
+  identifier = "tags"
+  url = "/tags/"
+[[menu.main]]
+  name = "分类"
+  weight = 40
+  identifier = "categories"
+  url = "/categories/"
+[[menu.main]]
+  name = "msezi.com"
+  weight = 50
+  url = "https://www.msezi.com"
+
+
+[params]
+  since = "2019"            # Site creation time          # 站点建立时间
+  homeFullContent = false   # if false, show post summaries on home page. Otherwise show full content.
+  rssFullContent = true     # if false, Rss feed instead of the summary
+
+  # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
+  logoTitle = "之芫小站"        # default: the title value    # 默认值: 上面设置的title值
+  keywords = ["之芫", "博客","之宁", "建站", "SEO"]
+  description = "这是我的个人博客场地，使用HUGO生成的静态页面网页。"
+
+  # add custom info on the footer.   # 添加备案信息
+  customFooter = '<a href="http://www.beian.miit.gov.cn/" target="_blank">黔ICP备19007572号-2</a>'
+
+
+  [params.reward]                                         # 文章打赏
+    enable = true
+    wechat = "https://msezi.oss-cn-hangzhou.aliyuncs.com/image/Wechat-appreciation-code.jpg"           # 微信二维码
+    alipay = "https://msezi.oss-cn-hangzhou.aliyuncs.com/image/Alipay.jpg"           # 支付宝二维码
+
+  # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
+  dateFormatToUse = "2006-01-02 15:04:05"
+
+  # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
+  # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
+  toc = true                                                                            # 是否开启目录
+  photoswipe = true         # see https://github.com/dimsemenov/PhotoSwipe            # 是否启用PhotoSwipe（图片可点击）
+  contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
+
+  # Link custom CSS and JS assets
+  #   (relative to /static/css and /static/js respectively)
+  customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
+  customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
+
+  [params.social]                                         # 社交链接
+    a-email = "mailto:mosheing@foxmail.com"
+    # b-stack-overflow = "http://localhost:1313"
+    # c-twitter = "http://localhost:1313"
+    # d-facebook = "http://localhost:1313"
+    e-linkedin = "https://www.linkedin.com/in/shengming-mo-63144314a/"
+    # f-google = "http://localhost:1313"
+    g-github = "https://github.com/zhynin"
+    # h-weibo = "http://localhost:1313"
+    i-zhihu = "https://www.zhihu.com/people/xian-yu-ye-shi-yu-35"
+    # j-douban = "http://localhost:1313"
+    # k-pocket = "http://localhost:1313"
+    # l-tumblr = "http://localhost:1313"
+    # m-instagram = "http://localhost:1313"
+    # n-gitlab = "http://localhost:1313"
+    # o-goodreads = "http://localhost:1313"
+    # p-coding = "http://localhost:1313"
+    q-bilibili = "https://space.bilibili.com/93740741/"
+    # r-codeforces = "http://localhost:1313"
+    # s-mastodon = "http://localhost:1313"
+    
