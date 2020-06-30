@@ -1,8 +1,12 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
+# lastmod: 
 draft: true
 # weight: 1 # 当为1时是置顶。
+# comment: true # 评论
+# toc: true # 目录
+
 tags: [
     "",
     "",

@@ -92,6 +92,17 @@ defaultContentLanguage = "zh-cn"  # 默认使用的语言
   customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
   customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
 
+
+
+############## 评论系统  start ##############
+[params.utterances] # https://utteranc.es/
+  owner = "" # Your GitHub ID
+  repo = "" # The repo to store comments
+
+
+############ 评论系统  end ##############
+
+
   [params.social]                                         # 社交链接
     a-email = "mailto:mosheing@foxmail.com"
     # b-stack-overflow = "http://localhost:1313"
