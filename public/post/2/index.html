@@ -69,7 +69,7 @@
 <meta itemprop="description" content="首先到SSL控制台下载SSL证书，记得下载对应版本的，下载Nginx版本。 然后上传到服务器。 修改两个文件名为SSL站点的名字 1、在Nginx">
 <meta itemprop="datePublished" content="2020-05-09T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-05-09T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="464">
+<meta itemprop="wordCount" content="533">
 
 
 
@@ -302,12 +302,6 @@
 
     
     
-<div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">文章目录</h2>
-  <div class="post-toc-content">
-    <nav id="TableOfContents"></nav>
-  </div>
-</div>
 
     
     <div class="post-content">
@@ -316,77 +310,158 @@
 <p>修改两个文件名为SSL站点的名字</p>
 <p>1、在Nginx安装目录下创建cert目录，并将下载的证书文件和密钥文件拷贝到cert目录中。</p>
 <p>2、修改Nginx配置文件。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># http自动跳转https</span>
-server <span style="color:#f92672">{</span>
-    listen 80;
-    server_name www.msezi.com;   <span style="color:#75715e">#将localhost修改为您证书绑定的域名</span>
-    root /var/www/wordpress;
-    rewrite ^<span style="color:#f92672">(</span>.*<span style="color:#f92672">)</span>$ https://$host$1 permanent;   <span style="color:#75715e">#将所有http请求通过rewrite重定向到https。</span>
-    location / <span style="color:#f92672">{</span>
-        index index.html index.htm index.php;
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># http自动跳转https</span>
+server <span class="o">{</span>
+    listen 80<span class="p">;</span>
+    server_name www.msezi.com<span class="p">;</span>   <span class="c1">#将localhost修改为您证书绑定的域名</span>
+    root /var/www/wordpress<span class="p">;</span>
+    rewrite ^<span class="o">(</span>.*<span class="o">)</span>$ https://<span class="nv">$host$1</span> permanent<span class="p">;</span>   <span class="c1">#将所有http请求通过rewrite重定向到https。</span>
+    location / <span class="o">{</span>
+        index index.html index.htm index.php<span class="p">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 
 
-<span style="color:#75715e"># ssl</span>
-server <span style="color:#f92672">{</span>
-    listen       <span style="color:#ae81ff">443</span> ssl http2 default_server;
-    server_name  www.msezi.com;
-    root /var/www/wordpress;
+<span class="c1"># ssl</span>
+server <span class="o">{</span>
+    listen       <span class="m">443</span> ssl http2 default_server<span class="p">;</span>
+    server_name  www.msezi.com<span class="p">;</span>
+    root /var/www/wordpress<span class="p">;</span>
 
-    <span style="color:#75715e">#charset koi8-r;</span>
-    ssl_certificate <span style="color:#e6db74">&#34;cert/www.msezi.com.pem&#34;</span>;	<span style="color:#75715e">#证书地址</span>
-    ssl_certificate_key <span style="color:#e6db74">&#34;cert/www.msezi.com.key&#34;</span>;	<span style="color:#75715e">#证书地址</span>
-    ssl_session_cache shared:SSL:1m;
-    ssl_session_timeout  10m;
-    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;	<span style="color:#75715e">#使用此加密套件</span>
-    ssl_prefer_server_ciphers on;
-    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;	<span style="color:#75715e">#使用此协议</span>
+    <span class="c1">#charset koi8-r;</span>
+    ssl_certificate <span class="s2">&#34;cert/www.msezi.com.pem&#34;</span><span class="p">;</span>	<span class="c1">#证书地址</span>
+    ssl_certificate_key <span class="s2">&#34;cert/www.msezi.com.key&#34;</span><span class="p">;</span>	<span class="c1">#证书地址</span>
+    ssl_session_cache shared:SSL:1m<span class="p">;</span>
+    ssl_session_timeout  10m<span class="p">;</span>
+    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4<span class="p">;</span>	<span class="c1">#使用此加密套件</span>
+    ssl_prefer_server_ciphers on<span class="p">;</span>
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2<span class="p">;</span>	<span class="c1">#使用此协议</span>
     
-    access_log  /var/log/nginx/host.access.log  main;
+    access_log  /var/log/nginx/host.access.log  main<span class="p">;</span>
 
-    location / <span style="color:#f92672">{</span>
-        <span style="color:#75715e">#root   /usr/share/nginx/html;</span>
-        index  index.html index.htm index.php; # 
-    <span style="color:#f92672">}</span>
+    location / <span class="o">{</span>
+        <span class="c1">#root   /usr/share/nginx/html;</span>
+        index  index.html index.htm index.php<span class="p">;</span> # 
+    <span class="o">}</span>
 
-    error_page  <span style="color:#ae81ff">404</span>              /404.html;
+    error_page  <span class="m">404</span>              /404.html<span class="p">;</span>
 
-    <span style="color:#75715e"># redirect server error pages to the static page /50x.html</span>
+    <span class="c1"># redirect server error pages to the static page /50x.html</span>
     #
-    error_page   <span style="color:#ae81ff">500</span> <span style="color:#ae81ff">502</span> <span style="color:#ae81ff">503</span> <span style="color:#ae81ff">504</span>  /50x.html;
-    location <span style="color:#f92672">=</span> /50x.html <span style="color:#f92672">{</span>
-    <span style="color:#75715e">#    root   /usr/share/nginx/html;</span>
-    <span style="color:#f92672">}</span>
+    error_page   <span class="m">500</span> <span class="m">502</span> <span class="m">503</span> <span class="m">504</span>  /50x.html<span class="p">;</span>
+    <span class="nv">location</span> <span class="o">=</span> /50x.html <span class="o">{</span>
+    <span class="c1">#    root   /usr/share/nginx/html;</span>
+    <span class="o">}</span>
 
-    <span style="color:#75715e"># proxy the PHP scripts to Apache listening on 127.0.0.1:80</span>
+    <span class="c1"># proxy the PHP scripts to Apache listening on 127.0.0.1:80</span>
     #
-    <span style="color:#75715e">#location ~ \.php$ {</span>
-    <span style="color:#75715e">#    proxy_pass   http://127.0.0.1;</span>
-    <span style="color:#75715e">#}</span>
+    <span class="c1">#location ~ \.php$ {</span>
+    <span class="c1">#    proxy_pass   http://127.0.0.1;</span>
+    <span class="c1">#}</span>
 
-    <span style="color:#75715e"># pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000</span>
+    <span class="c1"># pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000</span>
     #
-    location ~ <span style="color:#ae81ff">\.</span>php$ <span style="color:#f92672">{</span>
-        <span style="color:#75715e">#root           html;</span>
-        fastcgi_pass   unix:/run/php/php7.4-fpm.sock;
-        fastcgi_index  index.php;
-        <span style="color:#75715e">#fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;</span>
-	fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-        include        fastcgi_params;
-    <span style="color:#f92672">}</span>
+    location ~ <span class="se">\.</span>php$ <span class="o">{</span>
+        <span class="c1">#root           html;</span>
+        fastcgi_pass   unix:/run/php/php7.4-fpm.sock<span class="p">;</span>
+        fastcgi_index  index.php<span class="p">;</span>
+        <span class="c1">#fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;</span>
+	fastcgi_param SCRIPT_FILENAME <span class="nv">$document_root$fastcgi_script_name</span><span class="p">;</span>
+        include        fastcgi_params<span class="p">;</span>
+    <span class="o">}</span>
 
-    <span style="color:#75715e"># deny access to .htaccess files, if Apache&#39;s document root</span>
-    <span style="color:#75715e"># concurs with nginx&#39;s one</span>
+    <span class="c1"># deny access to .htaccess files, if Apache&#39;s document root</span>
+    <span class="c1"># concurs with nginx&#39;s one</span>
     #
-    location ~ /<span style="color:#ae81ff">\.</span>ht <span style="color:#f92672">{</span>
-        deny  all;
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
+    location ~ /<span class="se">\.</span>ht <span class="o">{</span>
+        deny  all<span class="p">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 
-</code></pre></div><p>使用<code>nginx -t</code>检测无误后重启Nginx则成功</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl restart nginx
-</code></pre></div><p><img src="https://img-blog.csdnimg.cn/20200509000047291.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01hZ2ljX05pbmph,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+</code></pre></td></tr></table>
+</div>
+</div><p>使用<code>nginx -t</code>检测无误后重启Nginx则成功</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl restart nginx
+</code></pre></td></tr></table>
+</div>
+</div><p><img src="https://img-blog.csdnimg.cn/20200509000047291.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01hZ2ljX05pbmph,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <p>因为Nginx的安装方式不同，所以配置的文件有的也不同，但是大同小异，关键性代码都是一样的。
 若是有疑问，欢迎留言。</p>
 
@@ -446,6 +521,19 @@ server <span style="color:#f92672">{</span>
       
       <nav class="post-nav">
         
+          <a class="prev" href="/post/3/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">使用hugo生成静态页面，并部署到腾讯云的云开发环境</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
         
           <a class="next" href="/post/1/">
             <span class="next-text nav-default">Debian&#43;Nginx&#43;MariaDB&#43;PHP&#43;WordPress详细完整云端建站教程</span>
